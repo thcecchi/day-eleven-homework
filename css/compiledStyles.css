@@ -5,7 +5,10 @@ body {
 header {
   width: 100%;
   background: #000;
-  display: block; }
+  display: block;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   header h2 {
     text-align: center;
     color: ghostwhite;
@@ -15,29 +18,39 @@ aside {
   width: 20%;
   background: tomato;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  display: none; }
 
 nav {
-  width: 95%; }
+  width: 95%;
+  margin-top: 50%; }
   nav ul {
     margin-left: 5%;
     padding: 0; }
     nav ul li {
       display: block;
       padding: 0;
-      height: 20px;
+      height: 50px;
       background: yellow;
-      text-align: center; }
+      text-align: center;
+      border: 3px solid black;
+      margin-bottom: 10%; }
       nav ul li a {
-        font-family: sans-serif; }
+        font-family: sans-serif;
+        line-height: 3em; }
 
 section {
-  width: 79%;
+  width: 100%;
   background: coral;
   display: inline-block;
   vertical-align: top; }
-  section h2 {
-    text-align: center; }
+  section .backButton {
+    display: none; }
+  section h2.closeAlbumTitle {
+    text-align: center;
+    display: none; }
+  section h2.closePhotoTitle {
+    display: none; }
   section .albumWrapper {
     display: block;
     margin-left: auto;
@@ -45,7 +58,12 @@ section {
     background: lightblue;
     display: -webkit-flex;
     -webkit-justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 3%; }
-    section .albumWrapper img {
-      width: 250px; }
+    flex-wrap: wrap; }
+    section .albumWrapper .photoFrame {
+      background: ghostwhite;
+      margin: 5%; }
+      section .albumWrapper .photoFrame img {
+        width: 250px; }
+      section .albumWrapper .photoFrame h5.photoName {
+        text-align: center;
+        padding-bottom: 10px; }

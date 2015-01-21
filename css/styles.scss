@@ -7,6 +7,9 @@ header {
   width: 100%;
   background: #000;
   display: block;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   h2 {
     text-align: center;
@@ -20,10 +23,12 @@ aside {
     background: tomato;
     display: inline-block;
     vertical-align: top;
+    display: none;
 }
 
 nav {
   width: 95%;
+  margin-top: 50%;
 
   ul {
 
@@ -33,12 +38,15 @@ nav {
     li {
       display: block;
       padding: 0;
-      height: 20px;
+      height: 50px;
       background: yellow;
       text-align: center;
+      border: 3px solid black;
+      margin-bottom: 10%;
 
       a {
         font-family: sans-serif;
+        line-height: 3em;
       }
     }
   }
@@ -46,13 +54,22 @@ nav {
 }
 
 section {
-  width: 79%;
+  width: 100%;
   background: coral;
   display: inline-block;
   vertical-align: top;
 
-  h2 {
+  .backButton{
+    display: none;
+  }
+
+  h2.closeAlbumTitle {
     text-align: center;
+    display: none;
+  }
+
+  h2.closePhotoTitle {
+    display: none;
   }
 
   .albumWrapper {
@@ -63,15 +80,22 @@ section {
     display: -webkit-flex;
     -webkit-justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 3%;
 
-    .closeTitle {
-      display: hidden;
+    .photoFrame {
+      background: ghostwhite;
+      margin: 5%;
+
+        img {
+          width: 250px;
+        }
+
+        h5.photoName {
+          text-align: center;
+          padding-bottom: 10px;
+
+        }
     }
 
-    img {
-      width: 250px;
-    }
   }
 
 }
