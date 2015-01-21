@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  background: #000;
+  display: block; }
+  header h2 {
+    text-align: center;
+    color: ghostwhite;
+    font-family: sans-serif; }
+
+aside {
+  width: 20%;
+  background: tomato;
+  display: inline-block;
+  vertical-align: top; }
+
+nav {
+  width: 95%; }
+  nav ul {
+    margin-left: 5%;
+    padding: 0; }
+    nav ul li {
+      display: block;
+      padding: 0;
+      height: 20px;
+      background: yellow;
+      text-align: center; }
+      nav ul li a {
+        font-family: sans-serif; }
+
+section {
+  width: 79%;
+  background: coral;
+  display: inline-block;
+  vertical-align: top; }
+  section h2 {
+    text-align: center; }
+  section .albumWrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: lightblue;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3%; }
+    section .albumWrapper img {
+      width: 250px; }
