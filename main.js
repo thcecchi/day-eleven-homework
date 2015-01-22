@@ -119,10 +119,10 @@ $photo6.click(function(event) {
   $Nav1.click(function(event) {
     event.preventDefault();
 
-    $(".photoWrapper1").addClass("active");
     $(this).closest("li").siblings().removeClass("activeNav");
     $(this).closest("li").addClass("activeNav");
-    $(".postWrapper1").siblings().removeClass("active");
+    $(".photoWrapper1").addClass("active");
+    $(".photoWrapper1").siblings().removeClass("active");
   });
 
   $Nav2.click(function(event) {
@@ -166,7 +166,7 @@ $photo6.click(function(event) {
 
     $(this).closest("li").siblings().removeClass("activeNav");
     $(this).closest("li").addClass("activeNav");
-    $(".postWrapper6").siblings().removeClass("active");
+    $(".photoWrapper6").siblings().removeClass("active");
     $(".photoWrapper6").addClass("active");
   });
 
