@@ -1,0 +1,32 @@
+section.fullscreen {
+  background: gray;
+  width: 100%;
+
+    .closePhotoTitle {
+      display: block;
+      text-align: center;
+    }
+
+    .photoWrapper {
+
+      &.active {
+        width: 100%;
+        display: block;
+
+        .photoFrame {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 5%;
+          width: 35%;
+
+          img {
+            width: 100%;
+          }
+
+          h5.photoName {
+            display: none;
+          }
+      }
+    }
+  }
+}

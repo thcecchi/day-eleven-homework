@@ -1,3 +1,76 @@
+aside {
+  display: none; }
+  aside.active {
+    width: 20%;
+    background: tomato;
+    display: inline-block;
+    vertical-align: top;
+    display: inline-block; }
+    aside.active nav {
+      width: 95%;
+      margin-top: 50%; }
+      aside.active nav ul {
+        margin-left: 5%;
+        padding: 0; }
+        aside.active nav ul li {
+          display: block;
+          padding: 0;
+          height: 50px;
+          background: yellow;
+          text-align: center;
+          border: 3px solid black;
+          margin-bottom: 10%; }
+          aside.active nav ul li.active {
+            background: coral; }
+          aside.active nav ul li a {
+            font-family: sans-serif;
+            line-height: 3em; }
+
+section.collapsed {
+  width: 79%; }
+  section.collapsed .closeAlbumTitle {
+    display: block; }
+  section.collapsed .photoWrapper {
+    display: none; }
+    section.collapsed .photoWrapper.active {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: lightblue;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+      flex-wrap: wrap; }
+      section.collapsed .photoWrapper.active .photoFrame {
+        background: ghostwhite;
+        margin: 5%; }
+        section.collapsed .photoWrapper.active .photoFrame img {
+          width: 225px; }
+        section.collapsed .photoWrapper.active .photoFrame h5.albumName {
+          display: none; }
+        section.collapsed .photoWrapper.active .photoFrame h5.photoName {
+          display: block;
+          text-align: center;
+          padding-bottom: 10px; }
+
+section.fullscreen {
+  background: gray;
+  width: 100%; }
+  section.fullscreen .closePhotoTitle {
+    display: block;
+    text-align: center; }
+  section.fullscreen .photoWrapper.active {
+    width: 100%;
+    display: block; }
+    section.fullscreen .photoWrapper.active .photoFrame {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+      width: 35%; }
+      section.fullscreen .photoWrapper.active .photoFrame img {
+        width: 100%; }
+      section.fullscreen .photoWrapper.active .photoFrame h5.photoName {
+        display: none; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -14,56 +87,34 @@ header {
     color: ghostwhite;
     font-family: sans-serif; }
 
-aside {
-  width: 20%;
-  background: tomato;
-  display: inline-block;
-  vertical-align: top;
-  display: none; }
-
-nav {
-  width: 95%;
-  margin-top: 50%; }
-  nav ul {
-    margin-left: 5%;
-    padding: 0; }
-    nav ul li {
-      display: block;
-      padding: 0;
-      height: 50px;
-      background: yellow;
-      text-align: center;
-      border: 3px solid black;
-      margin-bottom: 10%; }
-      nav ul li a {
-        font-family: sans-serif;
-        line-height: 3em; }
-
 section {
   width: 100%;
   background: coral;
   display: inline-block;
   vertical-align: top; }
-  section .backButton {
-    display: none; }
   section h2.closeAlbumTitle {
     text-align: center;
     display: none; }
   section h2.closePhotoTitle {
     display: none; }
+  section .photoWrapper {
+    display: none; }
   section .albumWrapper {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: lightblue;
-    display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    flex-wrap: wrap; }
-    section .albumWrapper .photoFrame {
-      background: ghostwhite;
-      margin: 5%; }
-      section .albumWrapper .photoFrame img {
-        width: 250px; }
-      section .albumWrapper .photoFrame h5.photoName {
-        text-align: center;
-        padding-bottom: 10px; }
+    display: none; }
+    section .albumWrapper.active {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: lightblue;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+      flex-wrap: wrap; }
+      section .albumWrapper.active .albumFrame {
+        background: ghostwhite;
+        margin: 5%; }
+        section .albumWrapper.active .albumFrame img {
+          width: 250px; }
+        section .albumWrapper.active .albumFrame h5.albumName {
+          display: block;
+          text-align: center;
+          padding-bottom: 10px; }

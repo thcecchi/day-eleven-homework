@@ -1,3 +1,6 @@
+@import "stylesPhoto.scss";
+@import "stylesFullscreen.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -18,50 +21,11 @@ header {
   }
 }
 
-aside {
-    width: 20%;
-    background: tomato;
-    display: inline-block;
-    vertical-align: top;
-    display: none;
-}
-
-nav {
-  width: 95%;
-  margin-top: 50%;
-
-  ul {
-
-    margin-left: 5%;
-    padding: 0;
-
-    li {
-      display: block;
-      padding: 0;
-      height: 50px;
-      background: yellow;
-      text-align: center;
-      border: 3px solid black;
-      margin-bottom: 10%;
-
-      a {
-        font-family: sans-serif;
-        line-height: 3em;
-      }
-    }
-  }
-
-}
-
 section {
   width: 100%;
   background: coral;
   display: inline-block;
   vertical-align: top;
-
-  .backButton{
-    display: none;
-  }
 
   h2.closeAlbumTitle {
     text-align: center;
@@ -72,30 +36,38 @@ section {
     display: none;
   }
 
+  .photoWrapper {
+    display: none;
+  }
+
   .albumWrapper {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: lightblue;
-    display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    flex-wrap: wrap;
+    display: none;
 
-    .photoFrame {
-      background: ghostwhite;
-      margin: 5%;
+      &.active {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          background: lightblue;
+          display: -webkit-flex;
+          -webkit-justify-content: space-around;
+          flex-wrap: wrap;
 
-        img {
-          width: 250px;
-        }
+          .albumFrame {
+            background: ghostwhite;
+            margin: 5%;
 
-        h5.photoName {
-          text-align: center;
-          padding-bottom: 10px;
+              img {
+                width: 250px;
+              }
+
+              h5.albumName {
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+              }
+
+          }
 
         }
     }
-
-  }
-
 }

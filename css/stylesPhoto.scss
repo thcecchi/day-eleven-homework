@@ -1,0 +1,83 @@
+aside {
+    display: none;
+
+    &.active {
+      width: 20%;
+      background: tomato;
+      display: inline-block;
+      vertical-align: top;
+      display: inline-block;
+
+      nav {
+        width: 95%;
+        margin-top: 50%;
+
+        ul {
+
+          margin-left: 5%;
+          padding: 0;
+
+          li {
+            display: block;
+            padding: 0;
+            height: 50px;
+            background: yellow;
+            text-align: center;
+            border: 3px solid black;
+            margin-bottom: 10%;
+
+            &.active{
+              background: coral;
+            }
+
+            a {
+              font-family: sans-serif;
+              line-height: 3em;
+            }
+          }
+        }
+
+      }
+    }
+}
+
+section.collapsed {
+    width: 79%;
+
+    .closeAlbumTitle {
+      display: block;
+    }
+
+  .photoWrapper {
+    display: none;
+
+    &.active {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: lightblue;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+      flex-wrap: wrap;
+
+      .photoFrame {
+        background: ghostwhite;
+        margin: 5%;
+
+        img {
+          width: 225px;
+        }
+
+        h5.albumName {
+          display: none;
+        }
+
+        h5.photoName {
+          display: block;
+          text-align: center;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
