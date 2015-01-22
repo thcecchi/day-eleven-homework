@@ -16,11 +16,11 @@ aside {
           display: block;
           padding: 0;
           height: 50px;
-          background: yellow;
+          background: lightblue;
           text-align: center;
           border: 3px solid black;
           margin-bottom: 10%; }
-          aside.active nav ul li.active {
+          aside.active nav ul li.activeNav {
             background: coral; }
           aside.active nav ul li a {
             font-family: sans-serif;
@@ -72,7 +72,7 @@ section.fullscreen {
       section.fullscreen .photoWrapper1.active .photoFrame img, section.fullscreen .photoWrapper2.active .photoFrame img, section.fullscreen .photoWrapper3.active .photoFrame img, section.fullscreen .photoWrapper4.active .photoFrame img, section.fullscreen .photoWrapper5.active .photoFrame img, section.fullscreen .photoWrapper6.active .photoFrame img {
         width: 100%; }
       section.fullscreen .photoWrapper1.active .photoFrame h5.photoName, section.fullscreen .photoWrapper2.active .photoFrame h5.photoName, section.fullscreen .photoWrapper3.active .photoFrame h5.photoName, section.fullscreen .photoWrapper4.active .photoFrame h5.photoName, section.fullscreen .photoWrapper5.active .photoFrame h5.photoName, section.fullscreen .photoWrapper6.active .photoFrame h5.photoName {
-        display: none; }
+        display: block; }
 
 body {
   margin: 0;
