@@ -2,12 +2,12 @@ section.fullscreen {
   background: gray;
   width: 100%;
 
-    .closePhotoTitle {
-      display: block;
-      text-align: center;
-    }
+    // .closePhotoTitle {
+    //   display: block;
+    //   text-align: center;
+    // }
 
-    .photoWrapper {
+    .photoWrapper1, .photoWrapper2, .photoWrapper3, .photoWrapper4, .photoWrapper5, .photoWrapper6 {
 
       &.active {
         width: 100%;
@@ -18,6 +18,7 @@ section.fullscreen {
           margin-right: auto;
           margin-top: 5%;
           width: 35%;
+          padding-bottom: 100px;
 
           img {
             width: 100%;

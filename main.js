@@ -20,10 +20,46 @@ var $photo6 = $(".photoFrame").eq(5);
 // SELECT ALBUM
 $album1.click(function(event) {
   $(".albumWrapper").removeClass("active");
-  $(".photoWrapper").addClass("active");
+  $(".photoWrapper1").addClass("active");
   $("aside").addClass("active");
   $("section").addClass("collapsed");
 });
+
+$album2.click(function(event) {
+  $(".albumWrapper").removeClass("active");
+  $(".photoWrapper2").addClass("active");
+  $("aside").addClass("active");
+  $("section").addClass("collapsed");
+});
+
+$album3.click(function(event) {
+  $(".albumWrapper").removeClass("active");
+  $(".photoWrapper3").addClass("active");
+  $("aside").addClass("active");
+  $("section").addClass("collapsed");
+});
+
+$album4.click(function(event) {
+  $(".albumWrapper").removeClass("active");
+  $(".photoWrapper4").addClass("active");
+  $("aside").addClass("active");
+  $("section").addClass("collapsed");
+});
+
+$album5.click(function(event) {
+  $(".albumWrapper").removeClass("active");
+  $(".photoWrapper5").addClass("active");
+  $("aside").addClass("active");
+  $("section").addClass("collapsed");
+});
+
+$album6.click(function(event) {
+  $(".albumWrapper").removeClass("active");
+  $(".photoWrapper6").addClass("active");
+  $("aside").addClass("active");
+  $("section").addClass("collapsed");
+});
+
 
 //SELECT PHOTO
 $photo1.click(function(event) {
@@ -31,6 +67,41 @@ $photo1.click(function(event) {
   $("section").removeClass("collapsed");
   $("section").addClass("fullscreen");
   $(".photoFrame:eq(1),.photoFrame:eq(2),.photoFrame:eq(3),.photoFrame:eq(4),.photoFrame:eq(5)").remove();
+});
+
+$photo2.click(function(event) {
+  $("aside").removeClass("active");
+  $("section").removeClass("collapsed");
+  $("section").addClass("fullscreen");
+  $(".photoFrame:eq(1),.photoFrame:eq(2),.photoFrame:eq(3),.photoFrame:eq(4),.photoFrame:eq(5)").remove();
+});
+
+$photo3.click(function(event) {
+  $("aside").removeClass("active");
+  $("section").removeClass("collapsed");
+  $("section").addClass("fullscreen");
+  $(".photoFrame:eq(0),.photoFrame:eq(1),.photoFrame:eq(3),.photoFrame:eq(4),.photoFrame:eq(5)").remove();
+});
+
+$photo4.click(function(event) {
+  $("aside").removeClass("active");
+  $("section").removeClass("collapsed");
+  $("section").addClass("fullscreen");
+  $(".photoFrame:eq(0),.photoFrame:eq(1),.photoFrame:eq(2),.photoFrame:eq(4),.photoFrame:eq(5)").remove();
+});
+
+$photo5.click(function(event) {
+  $("aside").removeClass("active");
+  $("section").removeClass("collapsed");
+  $("section").addClass("fullscreen");
+  $(".photoFrame:eq(0),.photoFrame:eq(1),.photoFrame:eq(2),.photoFrame:eq(3),.photoFrame:eq(5)").remove();
+});
+
+$photo6.click(function(event) {
+  $("aside").removeClass("active");
+  $("section").removeClass("collapsed");
+  $("section").addClass("fullscreen");
+  $(".photoFrame:eq(0),.photoFrame:eq(1),.photoFrame:eq(2),.photoFrame:eq(3),.photoFrame:eq(5)").remove();
 });
 
 

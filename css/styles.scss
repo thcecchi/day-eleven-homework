@@ -27,7 +27,7 @@ section {
   display: inline-block;
   vertical-align: top;
 
-  h2.closeAlbumTitle {
+  h2 {
     text-align: center;
     display: none;
   }
@@ -36,7 +36,7 @@ section {
     display: none;
   }
 
-  .photoWrapper {
+  .photoWrapper1, .photoWrapper2, .photoWrapper3, .photoWrapper4, .photoWrapper5, .photoWrapper6 {
     display: none;
   }
 
