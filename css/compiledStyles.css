@@ -2,7 +2,7 @@ aside {
   display: none; }
   aside.active {
     width: 20%;
-    background: tomato;
+    background: gray;
     display: inline-block;
     vertical-align: top;
     display: inline-block; }
@@ -28,6 +28,8 @@ aside {
 
 section.collapsed {
   width: 79%; }
+  section.collapsed .backButton {
+    display: none; }
   section.collapsed .closeAlbumTitle {
     display: block;
     text-align: center; }
@@ -56,6 +58,8 @@ section.collapsed {
 section.fullscreen {
   background: gray;
   width: 100%; }
+  section.fullscreen .backButton {
+    display: inline-block; }
   section.fullscreen .photoWrapper1.active, section.fullscreen .photoWrapper2.active, section.fullscreen .photoWrapper3.active, section.fullscreen .photoWrapper4.active, section.fullscreen .photoWrapper5.active, section.fullscreen .photoWrapper6.active {
     width: 100%;
     display: block; }
@@ -91,6 +95,8 @@ section {
   background: coral;
   display: inline-block;
   vertical-align: top; }
+  section .backButton {
+    display: none; }
   section h2 {
     text-align: center;
     display: none; }

@@ -3,7 +3,7 @@ aside {
 
     &.active {
       width: 20%;
-      background: tomato;
+      background: gray;
       display: inline-block;
       vertical-align: top;
       display: inline-block;
@@ -43,6 +43,10 @@ aside {
 
 section.collapsed {
     width: 79%;
+
+    .backButton {
+      display: none;
+    }
 
     .closeAlbumTitle {
       display: block;
