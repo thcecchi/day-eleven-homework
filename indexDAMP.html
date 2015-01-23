@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="/css/compiledStyles.css">
+  </head>
+  <body>
+
+    <header>
+      <h2>My Albums</h2>
+    </header>
+
+    <aside>
+      <nav>
+        <ul>
+          <li ref="albumFrame" class="activeNav"><a href="#">Album 1</a></li>
+          <li><a href="#">Album 2</a></li>
+          <li><a href="#">Album 3</a></li>
+          <li><a href="#">Album 4</a></li>
+          <li><a href="#">Album 5</a></li>
+          <li><a href="#">Album 6</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section>
+      <!-- <h2 class="closeAlbumTitle">Album 1</h2>
+      <h2 class="closePhotoTitle">Photo 1</h2> -->
+      <a class="backButton" href="#">Back to Album</a>
+      <!-- FULLSCREEN ALBUM WRAPPER -->
+      <div class="albumWrapper active">
+        <div class="albumFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="albumName">Album 1</h5>
+        </div>
+        <div class="albumFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="albumName">Album 2</h5>
+        </div>
+        <div class="albumFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="albumName">Album 3</h5>
+        </div>
+        <div class="albumFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="albumName">Album 4</h5>
+        </div>
+        <div class="albumFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="albumName">Album 5</h5>
+        </div>
+        <div class="albumFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="albumName">Album 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 1 -->
+      <div class="photoWrapper1">
+        <div class="closeAlbumTitle">
+          <h2>Album 1</h2>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://www.fillmurray.com/200/200" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 2 -->
+      <div class="photoWrapper2">
+        <div class="closeAlbumTitle">
+          <h2>Album 2</h2>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/technics-q-c-250-204-10.jpg" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 3 -->
+      <div class="photoWrapper3">
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/business-q-c-250-204-3.jpg" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 4 -->
+      <div class="photoWrapper4">
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/sports-q-c-250-200-1.jpg" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 5 -->
+      <div class="photoWrapper5">
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/city-q-g-250-200-9.jpg" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+
+      <!-- 3/4 SCREEN PHOTO CONTAINER 6 -->
+      <div class="photoWrapper6">
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">photo 1</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">Photo 2</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">Photo 3</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">Photo 4</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">Photo 5</h5>
+        </div>
+        <div class="photoFrame">
+          <img src="http://lorempixel.com/output/food-q-g-250-200-8.jpg" alt="" />
+          <h5 class="photoName">Photo 6</h5>
+        </div>
+      </div>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

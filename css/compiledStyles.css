@@ -33,9 +33,9 @@ section.collapsed {
   section.collapsed .closeAlbumTitle {
     display: block;
     text-align: center; }
-  section.collapsed .photoWrapper1, section.collapsed .photoWrapper2, section.collapsed .photoWrapper3, section.collapsed .photoWrapper4, section.collapsed .photoWrapper5, section.collapsed .photoWrapper6 {
+  section.collapsed .photoWrapper {
     display: none; }
-    section.collapsed .photoWrapper1.active, section.collapsed .photoWrapper2.active, section.collapsed .photoWrapper3.active, section.collapsed .photoWrapper4.active, section.collapsed .photoWrapper5.active, section.collapsed .photoWrapper6.active {
+    section.collapsed .photoWrapper.active {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -43,14 +43,14 @@ section.collapsed {
       display: -webkit-flex;
       -webkit-justify-content: space-around;
       flex-wrap: wrap; }
-      section.collapsed .photoWrapper1.active .photoFrame, section.collapsed .photoWrapper2.active .photoFrame, section.collapsed .photoWrapper3.active .photoFrame, section.collapsed .photoWrapper4.active .photoFrame, section.collapsed .photoWrapper5.active .photoFrame, section.collapsed .photoWrapper6.active .photoFrame {
+      section.collapsed .photoWrapper.active .photoFrame {
         background: ghostwhite;
         margin: 5%; }
-        section.collapsed .photoWrapper1.active .photoFrame img, section.collapsed .photoWrapper2.active .photoFrame img, section.collapsed .photoWrapper3.active .photoFrame img, section.collapsed .photoWrapper4.active .photoFrame img, section.collapsed .photoWrapper5.active .photoFrame img, section.collapsed .photoWrapper6.active .photoFrame img {
+        section.collapsed .photoWrapper.active .photoFrame img {
           width: 225px; }
-        section.collapsed .photoWrapper1.active .photoFrame h5.albumName, section.collapsed .photoWrapper2.active .photoFrame h5.albumName, section.collapsed .photoWrapper3.active .photoFrame h5.albumName, section.collapsed .photoWrapper4.active .photoFrame h5.albumName, section.collapsed .photoWrapper5.active .photoFrame h5.albumName, section.collapsed .photoWrapper6.active .photoFrame h5.albumName {
+        section.collapsed .photoWrapper.active .photoFrame h5.albumName {
           display: none; }
-        section.collapsed .photoWrapper1.active .photoFrame h5.photoName, section.collapsed .photoWrapper2.active .photoFrame h5.photoName, section.collapsed .photoWrapper3.active .photoFrame h5.photoName, section.collapsed .photoWrapper4.active .photoFrame h5.photoName, section.collapsed .photoWrapper5.active .photoFrame h5.photoName, section.collapsed .photoWrapper6.active .photoFrame h5.photoName {
+        section.collapsed .photoWrapper.active .photoFrame h5.photoName {
           display: block;
           text-align: center;
           padding-bottom: 10px; }
@@ -60,18 +60,18 @@ section.fullscreen {
   width: 100%; }
   section.fullscreen .backButton {
     display: inline-block; }
-  section.fullscreen .photoWrapper1.active, section.fullscreen .photoWrapper2.active, section.fullscreen .photoWrapper3.active, section.fullscreen .photoWrapper4.active, section.fullscreen .photoWrapper5.active, section.fullscreen .photoWrapper6.active {
+  section.fullscreen .photoWrapper.active {
     width: 100%;
     display: block; }
-    section.fullscreen .photoWrapper1.active .photoFrame, section.fullscreen .photoWrapper2.active .photoFrame, section.fullscreen .photoWrapper3.active .photoFrame, section.fullscreen .photoWrapper4.active .photoFrame, section.fullscreen .photoWrapper5.active .photoFrame, section.fullscreen .photoWrapper6.active .photoFrame {
+    section.fullscreen .photoWrapper.active .photoFrame {
       margin-left: auto;
       margin-right: auto;
       margin-top: 5%;
       width: 35%;
       padding-bottom: 100px; }
-      section.fullscreen .photoWrapper1.active .photoFrame img, section.fullscreen .photoWrapper2.active .photoFrame img, section.fullscreen .photoWrapper3.active .photoFrame img, section.fullscreen .photoWrapper4.active .photoFrame img, section.fullscreen .photoWrapper5.active .photoFrame img, section.fullscreen .photoWrapper6.active .photoFrame img {
+      section.fullscreen .photoWrapper.active .photoFrame img {
         width: 100%; }
-      section.fullscreen .photoWrapper1.active .photoFrame h5.photoName, section.fullscreen .photoWrapper2.active .photoFrame h5.photoName, section.fullscreen .photoWrapper3.active .photoFrame h5.photoName, section.fullscreen .photoWrapper4.active .photoFrame h5.photoName, section.fullscreen .photoWrapper5.active .photoFrame h5.photoName, section.fullscreen .photoWrapper6.active .photoFrame h5.photoName {
+      section.fullscreen .photoWrapper.active .photoFrame h5.photoName {
         display: block; }
 
 body {
@@ -102,7 +102,7 @@ section {
     display: none; }
   section h2.closePhotoTitle {
     display: none; }
-  section .photoWrapper1, section .photoWrapper2, section .photoWrapper3, section .photoWrapper4, section .photoWrapper5, section .photoWrapper6 {
+  section .photoWrapper {
     display: none; }
   section .albumWrapper {
     display: none; }
@@ -113,7 +113,8 @@ section {
       background: lightblue;
       display: -webkit-flex;
       -webkit-justify-content: space-around;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      width: 70%; }
       section .albumWrapper.active .albumFrame {
         background: ghostwhite;
         margin: 5%; }

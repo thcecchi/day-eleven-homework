@@ -40,7 +40,7 @@ section {
     display: none;
   }
 
-  .photoWrapper1, .photoWrapper2, .photoWrapper3, .photoWrapper4, .photoWrapper5, .photoWrapper6 {
+  .photoWrapper {
     display: none;
   }
 
@@ -55,6 +55,7 @@ section {
           display: -webkit-flex;
           -webkit-justify-content: space-around;
           flex-wrap: wrap;
+          width: 70%;
 
           .albumFrame {
             background: ghostwhite;
