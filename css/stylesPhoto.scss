@@ -77,7 +77,11 @@ section.collapsed {
           display: none;
         }
 
-        h5.photoName {
+        h5.photoNameTop {
+          display: none;
+        }
+
+        h5.photoNameBottom {
           display: block;
           text-align: center;
           padding-bottom: 10px;

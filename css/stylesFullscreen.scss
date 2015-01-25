@@ -27,9 +27,15 @@ section.fullscreen {
             width: 100%;
           }
 
-          h5.photoName {
+          h5.photoNameTop {
             display: block;
+            font-size: 2em;
+            text-align: center;
 
+          }
+
+          h5.photoNameBottom {
+            display: none;
           }
       }
     }

@@ -77,6 +77,13 @@ var $photo4 = $(".photoFrame").eq(3);
 var $photo5 = $(".photoFrame").eq(4);
 var $photo6 = $(".photoFrame").eq(5);
 
+//
+// var subObject = $(this).attr('rel');
+// console.log(subObject);
+
+var subObjectValue = $(".photoFrame").data("photo");
+console.log(subObjectValue);
+
 
 // BACK BUTTON VARIABLE
 var $back = $(".backButton");
@@ -90,10 +97,6 @@ $(".albumFrame").click(function(event) {
   $("section").addClass("collapsed");
 
 // change photoFrame image based on which album is clicked
-// for(var i=0;k<$(this).attr('rel').length;k++){
-
-  // get the clicked album's keys
-    // var photoNumber = Object.keys($(this).attr('rel'));
 
     var subObject = $(this).attr('rel');
       console.log(subObject);
@@ -101,12 +104,13 @@ $(".albumFrame").click(function(event) {
     var subObjectValue = $(".photoFrame").data("photo");
       console.log(subObjectValue);
 
-  // assign key to ".photoFrame" and change src to object's value -- ISSUE: OBJECT NOT BEING RECOGNIZED AS OBJECTS
+  // assign myAlbums key to ".photoFrame" and change src to key's value
     $(".photoFrame").siblings().children("img").attr('src', myAlbums[subObject] [subObjectValue]);
+      console.log( "this is " + $(this).attr('rel') + " " + $('.photoFrame').attr('rel'));
 
-    console.log( "this is " + $(this).attr('rel') + " " + $('.photoFrame').attr('rel'));
+  //Assign activeNav class to corresponding li on nav bar
+    $('li').addClass(".activeNav");
 
-  // };
 });
 
 // SELECT PHOTO////////////////////////
@@ -125,21 +129,23 @@ $(".photoFrame").on("click", function(){
   var $Nav5 = $("nav a").eq(4);
   var $Nav6 = $("nav a").eq(5);
 
-  $Nav1.click(function(event) {
+  $("nav a").click(function(event) {
     event.preventDefault();
-
+    // Add/remove activeNav class
     $(this).closest("li").siblings().removeClass("activeNav");
     $(this).closest("li").addClass("activeNav");
-    $(".photoWrapper").addClass("active");
-    $(".photoWrapper").siblings().removeClass("active");
+    // Change album
+    var subObject = $(this).parent().attr('rel');
+
+    var subObjectValue = $(".photoFrame").data("photo")
+    $(".photoFrame").siblings().children("img").attr('src', myAlbums[subObject] [subObjectValue]);
   });
 
-// Nav change active state based on album selected
-
-  // $album.click(function(event) {
-  //   var albumRel = "." + $(this).attr('rel');
-  //   $(albumRel).addClass("active");
-  // });
+// Put photo name above photo @ fullscreen
+//   $(".photoFrame").on("click", function(){
+//
+//     $('this').toggle($('img').before($(this).children().last()));
+// });
 
 
 // Back Button////////////////////////////
@@ -148,6 +154,7 @@ $(".photoFrame").on("click", function(){
     $("section").removeClass("fullscreen");
     $("section").addClass("collapsed");
     $(".photoFrame").siblings().show();
+
   });
 
 });

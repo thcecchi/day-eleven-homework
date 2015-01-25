@@ -50,7 +50,9 @@ section.collapsed {
           width: 225px; }
         section.collapsed .photoWrapper.active .photoFrame h5.albumName {
           display: none; }
-        section.collapsed .photoWrapper.active .photoFrame h5.photoName {
+        section.collapsed .photoWrapper.active .photoFrame h5.photoNameTop {
+          display: none; }
+        section.collapsed .photoWrapper.active .photoFrame h5.photoNameBottom {
           display: block;
           text-align: center;
           padding-bottom: 10px; }
@@ -71,8 +73,12 @@ section.fullscreen {
       padding-bottom: 100px; }
       section.fullscreen .photoWrapper.active .photoFrame img {
         width: 100%; }
-      section.fullscreen .photoWrapper.active .photoFrame h5.photoName {
-        display: block; }
+      section.fullscreen .photoWrapper.active .photoFrame h5.photoNameTop {
+        display: block;
+        font-size: 2em;
+        text-align: center; }
+      section.fullscreen .photoWrapper.active .photoFrame h5.photoNameBottom {
+        display: none; }
 
 body {
   margin: 0;
