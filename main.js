@@ -109,7 +109,9 @@ $(".albumFrame").click(function(event) {
       console.log( "this is " + $(this).attr('rel') + " " + $('.photoFrame').attr('rel'));
 
   //Assign activeNav class to corresponding li on nav bar
-    $('li').addClass(".activeNav");
+  var currentClass = $(this).data("nav");
+  $("li." + currentClass).addClass("activeNav");
+  $("li." + currentClass).siblings().removeClass("activeNav");
 
 });
 
@@ -135,10 +137,10 @@ $(".photoFrame").on("click", function(){
     $(this).closest("li").siblings().removeClass("activeNav");
     $(this).closest("li").addClass("activeNav");
     // Change album
-    var subObject = $(this).parent().attr('rel');
+    var subObjectNav = $(this).parent().attr('rel');
 
     var subObjectValue = $(".photoFrame").data("photo")
-    $(".photoFrame").siblings().children("img").attr('src', myAlbums[subObject] [subObjectValue]);
+    $(".photoFrame").siblings().children("img").attr('src', myAlbums[subObjectNav] [subObjectValue]);
   });
 
 // Put photo name above photo @ fullscreen
